@@ -50,7 +50,7 @@ function Calculate () {
     
     if(!length || length < 6)
         length = lengthElement.min;
-    else
+    else if(length > 32)
         length = lengthElement.max;
 
     var generatePassword = () =>
